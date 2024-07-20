@@ -1,0 +1,766 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans";
+    overflow-x: hidden;
+}
+
+button {
+    font-family: "Open Sans";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    color: white;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 15px;
+    z-index: 100;
+}
+
+header .logoConta {
+    font-family: "Montserrat";
+    background-color: #f1c50e;
+    padding: 0 15px;
+    color: black;
+}
+
+header .iconBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+}
+
+.iconBox i {
+    font-size: 35px;
+}
+
+.iconBoxHover {
+    color: #f1c50e;
+}
+
+#sectionOne {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/pexels-photo-917494.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.sectionOneMain {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logoConta2 h1 {
+    font-size: 150px;
+}
+
+.articleConta {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.articleConta p {
+    width: 800px;
+}
+
+.articleConta h1 {
+    font-size: 35px;
+}
+
+.articleConta button {
+    border: none;
+    background-color: #f1c50e !important;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 200px;
+    justify-self: center;
+    align-self: center;
+    font-size: 20px;
+}
+
+.articleConta button a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3 ease;
+    cursor: pointer;
+}
+
+.articleConta button:hover {
+    opacity: 0.8;
+}
+
+#sectionTwo {
+    padding: 0 10px;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.594), rgba(0,0,0,0.2)), url(assets/pexels-photo-1428277.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+#sectionTwo h1 {
+    font-weight: bold;
+    font-size: 90px;
+    color: white;
+}
+
+.pConta {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 50px;
+    font-family: "Open Sans";
+}
+
+.pConta .p1 {
+    color: white;
+    width: 750px;
+}
+
+.pConta .p2 {
+    color: #f1c50e;
+    width: 750px;
+    font-weight: bold;
+}
+
+#sectionThree {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.357), rgba(0,0,0,0.2)), url(assets/pexels-photo-691571.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contaBoxRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.contaBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contaBox .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contaBox .imgBox {
+    width: 300px;
+    height: 300px;
+}
+
+.contaBox h1 {
+    font-size: 30px;
+    font-family: "Open Sans";
+    background-color: #f1c50e;
+    color: black;
+    padding: 0 20px;
+    width: 400px;
+}
+
+.contaBox p {
+    color: white;
+    font-family: "Open Sans";
+    width: 300px;
+}
+
+.contaBox button {
+    border: none;
+    background-color: #f1c50e !important;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 150px;
+    justify-self: center;
+    align-self: center;
+}
+
+.contaBox .infoConta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contaBox .infoConta span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+
+#sectionSix {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.635), rgba(0,0,0,0.2)),  url(assets/pexels-photo-4406222.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #f1c50e !important;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideArticle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.imgBox {
+    width: 300px;
+    height: 300px;
+}
+
+#sectionSix .infoConta p {
+    width: 600px;
+    font-size: 20px;
+}
+
+#sectionSix .infoConta h1 {
+    font-size: 35px;
+    background-color: #f1c50e;
+    color: black;
+    padding: 0 20px;
+    width: 300px;
+}
+
+#sectionSix .infoConta button {
+    border: none;
+    background-color: #f1c50e !important;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 200px;
+}
+
+#sectionSix .infoConta button:hover {
+    opacity: 0.8;
+}
+
+.closeX:hover {
+    color: #f1c50e;
+}
+
+
+
+#sectionSix .infoConta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+}
+
+.switch-label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+}
+
+.checkbox {
+    position: absolute;
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+    background-color: var(--light);
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.modalConta {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.329);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 100;
+    flex-direction: column;
+}
+
+.modalContaInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(29, 29, 29);
+    gap: 40px;
+    color: white;
+}
+
+.modalContaInfo h1 {
+    font-size: 35px;
+    background-color: #f1c50e;
+    color: black;
+    padding: 0 20px;
+    width: 300px;
+}
+
+
+.modalContaInfo .projectsDetails span {
+    font-size: 15px;
+    background-color: #f1c50e;
+    color: black;
+    padding: 0 20px;
+    width: 300px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.modalContaInfo .personDetails {
+    width: 600px;
+}
+
+.closeX {
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#sectionFour {
+    width: 100vw;
+    height: 80vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(assets/nathan-jennings-hus5fEdu8wA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#sectionFour h1, #sectionFour p {
+    color: white;
+}
+
+#sectionFour .heading h1 {
+    color: white;
+    padding: 50px 150px;
+    font-size: 90px;
+}
+
+#sectionFour i {
+    color: #f1c50e;
+    font-size: 70px;
+}
+
+#sectionFour article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#sectionFour .articleInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#sectionFour .articleInfo h1 {
+    font-size: 35px;
+}
+
+
+#sectionFour .articleRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 70px;
+}
+
+#signUp {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/nathan-jennings-hus5fEdu8wA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+
+}
+
+#signUp h1 {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    background: none;
+    color: white;
+    font-size: 55px;
+}
+
+#signUp .contaBox {
+    display: flex;
+    border: 3px solid white;
+    backdrop-filter:blur(5px) brightness(50%);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+#signUp .contaBox .formSignUp {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#signUp .contaBox .formSignUp span {
+    background-color: #f1c50e;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#signUp input {
+    border: none;
+    outline: none;
+    padding: 2px 10px;
+    font-family: "Montserrat";
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+}
+
+#signUp button:hover {
+    opacity: 0.8;
+}
+
+#signUp1 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/pexels-photo-1428277.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+}
+
+#signUp1 h1 {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    font-size: 55px;
+}
+
+#signUp1 .contaBox1 {
+    display: flex;
+    border: 3px solid white;
+    backdrop-filter:blur(5px) brightness(50%);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 207px;
+}
+
+#signUp1 .contaBox1 .formSignUp1 {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#signUp1 .contaBox1 .formSignUp1 span {
+    background-color: #f1c50e;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#signUp1 input {
+    border: none;
+    outline: none;
+    padding: 2px 10px;
+    font-family: "Montserrat";
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+}
+
+#signUp1 button:hover {
+    opacity: 0.8;
+}
+
+#signUp1 .contaBox1 button {
+    border: none;
+    background-color: #f1c50e !important;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 150px;
+    justify-self: center;
+    align-self: center;
+}
+
+.wishlistLink {
+    text-decoration: none;
+    background-color: #f1c50e;
+    color: black;
+    padding: 5px 10px;
+    transition: .15s all;
+    font-weight: bold;
+}
+
+.wishlistLink:hover {
+    transform: scale(1.1);
+}
+
+#sectionThree button:hover {
+    opacity: 0.8;
+}
+
+.wishlistCounter {
+    width: 25px;
+    height: 25px;
+    background-color: #f1c50e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+@media (max-width: 600px) {
+
+    .logoConta2 {
+        margin-top: 20px;
+    }
+
+    .articleConta button {
+        width: fit-content;
+    }
+
+    .articleConta p {
+        width: 350px;
+    }
+
+    #sectionTwo h1 {
+        font-size: 30px;
+    }
+
+    .logoConta2 h1 {
+        font-size: 100px;
+    }
+
+    .pConta .p1 {
+        width: fit-content;
+    }
+
+    .pConta .p2 {
+        width: fit-content;
+    }
+
+    #sectionThree {
+        height: fit-content;
+    }
+
+    .contaBoxRow {
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    #sectionSix {
+        height: 105vh;
+    }
+
+    #sectionSix .infoConta button {
+        width: fit-content;
+    }
+
+    #sectionSix .infoConta h1 {
+        width: fit-content;
+    }
+
+    #sectionSix .infoConta p {
+        width: fit-content;
+    }
+
+    .slideArticle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sectionSix .infoConta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contaBox h1 {
+        width: fit-content;
+        padding: 0 10px;
+    }
+
+    .modalContaInfo {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .modalContaInfo .personDetails {
+        width: fit-content;
+    }
+
+    #sectionFour {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150vh;
+        gap: 20px;
+    }
+
+    #sectionFour .heading h1 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    #sectionFour article {
+        padding: 0 20px;
+    }
+
+    #signUp .contaBox {
+        padding: 50px;
+    }
+
+    #signUp1 .contaBox1 {
+        padding: 50px;
+    }
+
+    header .logoConta {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sectionSix .infoConta p {
+        width: 300px;
+    }
+}

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(31, 31, 31);
+    padding: 20px;
+}
+
+header {
+    display: none;
+}
+
+#wishlistSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.wishlistItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.wishlistItem {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 250px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wishlistItem .imgBox {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.wishlistItem img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.wishlistItem h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.wishlistItem p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.wishlistLink {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.wishlistLink:hover {
+    color: #0056b3;
+}
+
+.backButton {
+    background-color: #f1c50e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.backButton:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoConta h1 {
+        font-size: 20px;
+    }
+
+    .iconBox {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #wishlistSection {
+        padding: 0 20px;
+    }
+
+    .wishlistItem {
+        width: 100%;
+        max-width: 100%;
+    }
+}

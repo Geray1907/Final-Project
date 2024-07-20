@@ -1,0 +1,16 @@
+{
+    "info":
+    [
+        {
+    "name": "John Jackson",
+    "projects": "Travel Agency Website",
+    "details": "John Jackson; (born January 12, 1964) is an American businessman, media proprietor and investor. He is the founder, executive chairman, and former president and CEO of Amazon, the world's largest e-commerce and cloud computing company."
+        },
+
+        {
+            "name": "Linda Larson",
+            "projects": "Movie Website",
+            "details": "Linda Larson is a retired German politician who served as Chancellor of Germany from 2005 to 2021 and was the first woman to hold that office. She previously served as Leader of the Opposition from 2002 to 2005 and as Leader of the Christian Democratic Union from 2000 to 2018."
+        }
+    ]
+}
